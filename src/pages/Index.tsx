@@ -12,7 +12,7 @@ const Index: React.FC = () => {
       <div id="hero">
         <HeroSection
           name="Harichandra Khatri"
-          title="Data Scientist & Analyst"
+          title="Data Analyst"
           description="I'm passionate about uncovering insights from complex datasets and turning them into actionable strategies. With expertise in SQL, Python, and visualization tools, I transform raw data into compelling stories."
           imageSrc="../../public/portfolio.jpg"
         />
