@@ -14,7 +14,7 @@ const Index: React.FC = () => {
           name="Harichandra Khatri"
           title="Data Scientist & Analyst"
           description="I'm passionate about uncovering insights from complex datasets and turning them into actionable strategies. With expertise in SQL, Python, and visualization tools, I transform raw data into compelling stories."
-          imageSrc="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1000&auto=format&fit=crop"
+          imageSrc="../../public/portfolio.jpg"
         />
       </div>
 

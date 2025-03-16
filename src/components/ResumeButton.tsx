@@ -1,12 +1,12 @@
-
 import React from 'react';
 import { Download } from 'lucide-react';
+import resume from '../../public/resume.pdf';
 
 const ResumeButton: React.FC = () => {
   return (
-    <a 
-      href="/resume.pdf" 
-      download="resume.pdf"
+    <a
+      href={resume}
+      download="Harichandra-Khatri-Resume.pdf"
       className="group inline-flex items-center gap-2 px-5 py-3 bg-data-charcoal text-white rounded-lg 
         transition-all duration-300 transform hover:translate-y-[-2px] hover:shadow-lg relative overflow-hidden"
     >
