@@ -2,11 +2,22 @@ import React, { useState } from 'react';
 import { Home, User, Code, Mail, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
+interface NavbarProps {
+  isMenuOpen: boolean;
+  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+
+    if (!isMenuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
   };
 
   const scrollToSection = (id: string) => {
@@ -55,7 +66,7 @@ const Navbar: React.FC = () => {
       <div
         className={cn(
           'md:hidden fixed inset-x-0 bg-white shadow-md transition-all duration-300 ease-in-out',
-          isMenuOpen ? 'top-16 opacity-100' : 'hidden opacity-0'
+          isMenuOpen ? 'block' : 'hidden'
         )}
       >
         <div className="flex flex-col p-4">

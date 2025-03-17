@@ -5,8 +5,9 @@ import ContactSection from '../components/ContactSection';
 import Navbar from '../components/Navbar';
 
 const Index: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <main className="min-h-screen pt-3">
+    <main className={`min-h-screen ${isMenuOpen ? 'mt-40' : 'mt-0'} pt-3`}>
       <Navbar />
 
       <div id="hero">

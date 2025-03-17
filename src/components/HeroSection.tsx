@@ -67,7 +67,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           className="order-1 md:order-2 flex justify-center md:justify-end animate-slide-up"
           style={{ animationDelay: '0.4s' }}
         >
-          <div className="relative flex justify-center items-center -mt-24 w-60 h-60 md:w-72 md:h-72">
+          <div className="relative flex justify-center items-center w-48 h-48 md:w-72 md:h-72">
             <div className="absolute w-full h-full bg-gray-100 rounded-full shadow-lg "></div>
             <img
               src={imageSrc}
