@@ -1,4 +1,5 @@
 import React from 'react';
+import { Github, Linkedin } from 'lucide-react';
 import ResumeButton from './ResumeButton';
 
 interface HeroSectionProps {
@@ -33,10 +34,32 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <h2 className="text-xl md:text-2xl text-data-gray font-light">
               {title}
             </h2>
-            <p className="text-lg text-data-charcoal/80 leading-relaxed">
+            <p className="text-lg text-data-charcoal/80 leading-relaxed text-justify">
               {description}
             </p>
+
+            {/* Resume Button */}
             <ResumeButton />
+
+            {/* Social Media Links */}
+            <div className="mt-6 flex space-x-6">
+              <a
+                href="https://github.com/Nabin78"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-data-blue transition-colors"
+              >
+                <Github size={28} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nabin-khatri-a6862b218/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-data-blue transition-colors"
+              >
+                <Linkedin size={28} />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -44,12 +67,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           className="order-1 md:order-2 flex justify-center md:justify-end animate-slide-up"
           style={{ animationDelay: '0.4s' }}
         >
-          <div className="relative -mt-40 w-56 h-56 md:w-72 md:h-72">
-            <div className="absolute rounded-full "></div>
+          <div className="relative flex justify-center items-center -mt-24 w-60 h-60 md:w-72 md:h-72">
+            <div className="absolute w-full h-full bg-gray-100 rounded-full shadow-lg "></div>
             <img
               src={imageSrc}
               alt={name}
-              className="absolute inset-2 rounded-full object-cover shadow-lg"
+              className="absolute w-full h-full rounded-full object-cover object-top shadow-md transition-transform duration-300 hover:scale-105"
             />
           </div>
         </div>

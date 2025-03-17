@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
       <div
         className={cn(
           'md:hidden fixed inset-x-0 bg-white shadow-md transition-all duration-300 ease-in-out',
-          isMenuOpen ? 'top-16 opacity-100' : '-top-full opacity-0'
+          isMenuOpen ? 'top-16 opacity-100' : 'hidden opacity-0'
         )}
       >
         <div className="flex flex-col p-4">

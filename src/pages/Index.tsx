@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import SkillsSection from '../components/SkillsSection';
 import ContactSection from '../components/ContactSection';
@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 
 const Index: React.FC = () => {
   return (
-    <main className="min-h-screen pt-16">
+    <main className="min-h-screen pt-3">
       <Navbar />
 
       <div id="hero">
